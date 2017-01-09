@@ -20,6 +20,4 @@ app.get("/:data", function(req, res){
     }
 });
 
-app.listen(process.argv[2], function(){
-    console.log("Server listening on port ", process.argv[2]);
-});
+app.listen(process.env.PORT || 8080);
