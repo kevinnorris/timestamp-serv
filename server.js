@@ -5,7 +5,6 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", function(req, res){
-    //console.log("Got request: ", req.method, "\nHeaders: ", JSON.stringify(req.headers));
     res.sendFile(path.join(__dirname, "/index.html")); 
 });
 
